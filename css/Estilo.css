@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+
+:root{
+	--medwhite:#F1F1F1;
+	--gris:#8f8f8f;
+	--yellow:#C47113;
+	--negro:#000000;
+}
+/*General*/
+.bg-menu{
+	background-color: var(--negro);
+}
+.block-title{
+	font-size: 20px;
+	
+}
+.item img{
+height: 300px;
+}
+
+.panel-right, .panel-cover{
+	background-color: rgba(0,0,0,0.82);	
+}
+.block-title{
+	text-align: center;
+}
+.list-menu img{
+	margin-left: 15px;
+	border-radius: 100%
+}
+.list-menu ul{	
+	padding-top: 45px;
+	
+}
+.list-menu i{
+	margin: auto;
+	color: white;
+	padding-top: 15px;
+}
+.item-inner h2{
+	margin: auto;
+}
+.list ul{
+	background-color: rgba(0,0,0,0.00);	
+}
+
+#app h2{
+	color: white;	
+}
+.container-fluid
+{
+	background-color: var(--medwhite);
+ border-radius: 3%;
+}
+
+
+/* Perfil settings*/
+.title{
+	color: white;
+}
+.navbar a{
+	color: white;
+}
+
+/*Metro Cinemas*/
+#Estrenos{
+	background-color: var(--medwhite);
+	border-radius: 2%;
+}
+.navbar-bg{
+	background: linear-gradient( #4A2B08,#C47113)
+}
+
+.page-content h1{
+	color: var(--yellow);
+	padding-top: 10px;
+	margin: auto;
+}
+
+
+
+
