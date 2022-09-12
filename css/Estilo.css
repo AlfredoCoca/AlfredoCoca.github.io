@@ -9,6 +9,7 @@ body{
 	--gris:#8f8f8f;
 	--yellow:#C47113;
 	--negro:#000000;
+	
 }
 /*General*/
 .bg-menu{
@@ -65,6 +66,56 @@ height: 300px;
 .navbar a{
 	color: white;
 }
+
+.formularios{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/* login inicial*/
+#btnLogin{
+	background-color: #E99330;
+}
+.item-content .item-label{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 300;
+	color: white;
+}
+#login div{
+	background-color: #200101;
+}
+#username, #password{
+	background-color: white;
+	border-radius: 3%;
+	margin-top: 15px;
+	text-align: center;
+}
+#login .block-footer{
+	color: white;
+}
+#login i, h3{
+	color:white;
+	text-align: center;
+}
+#login h3{
+	padding-top: 10px;
+	font-weight: lighter;
+	font-size: 15px;
+}
+#registro div{
+	background-color: #200101;
+}
+#name, #email,#phone,#password,#username{
+	background-color: white;
+	border-radius: 3%;
+	margin-top: 15px;
+	text-align: center;
+	
+}
+#btnRegistro{
+	background-color: #E99330;
+}
+
 
 /*Metro Cinemas*/
 #Estrenos{

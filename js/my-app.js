@@ -11,16 +11,16 @@ var app = new Framework7({
 	},
 	cache:false,
 	cacheDuration: 0,
-	modalTitle: 'Metro_Cinema',
+	modalTitle: 'CineApp',
 	dialog:{
-		title: 'Metro_Cinema',
+		title: 'CineApp',
 		buttonOk: 'Aceptar',
   	},
 	routes: [
 		{
-		path: '/index/',
+		path: '/home/',
     	url: 'index.html',
-    	name: 'index',
+    	name: 'home',
   		},
 		
 		{
@@ -49,6 +49,37 @@ var app = new Framework7({
 		
 	]
 });
+// Export selectors engine
+var $$ = Dom7;
+
+$$('#btnComprar').on('click', function () {
+  app.dialog.alert('!Tu compra fue realizada correctamente!');
+});
+
+$$('#btnConfirmar').on('click', function () {
+  app.dialog.confirm('¿Desea procesar su compra?', function () {
+    app.dialog.alert('!Tu compra fue realizada correctamente!');
+  });
+});
+
+$$('#btnLogin').on('click', function () {
+	var Usuario = $$('#username').val();
+	var Password = $$('#password').val();
+	
+  	if(Usuario == "movil" && Password == "123"){
+		app.dialog.alert('¡ Bienvenido a CineApp, la mejor app para ver que peliculas estan disponibles !');
+		app.loginScreen.close(".modal-login");
+		
+	}else{
+		app.dialog.alert('Lo sentimos, sus datos son incorrectos');
+	}
+	
+	
+});
+
+
+
+ 
 
 
 
